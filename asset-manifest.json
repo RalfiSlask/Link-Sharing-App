@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Link-Sharing-App/static/css/main.0be07306.css",
-    "main.js": "/Link-Sharing-App/static/js/main.d2a28294.js",
+    "main.js": "/Link-Sharing-App/static/js/main.34904864.js",
     "static/media/icon-codewars.svg": "/Link-Sharing-App/static/media/icon-codewars.3c9f5f77fb4ac9fdf2810aaab823bfd0.svg",
     "static/media/logo-devlinks-large.svg": "/Link-Sharing-App/static/media/logo-devlinks-large.52c487075bce824784b68a5e7c36a844.svg",
     "static/media/illustration-empty.svg": "/Link-Sharing-App/static/media/illustration-empty.91038f5445072aeed78f4af1f56c15ee.svg",
@@ -31,10 +31,10 @@
     "static/media/icon-chevron-down.svg": "/Link-Sharing-App/static/media/icon-chevron-down.022f099cc2013e00f81adcbd0eef4484.svg",
     "static/media/icon-drag-and-drop.svg": "/Link-Sharing-App/static/media/icon-drag-and-drop.1de0678de86a4fe2f3c53111f3d73dda.svg",
     "main.0be07306.css.map": "/Link-Sharing-App/static/css/main.0be07306.css.map",
-    "main.d2a28294.js.map": "/Link-Sharing-App/static/js/main.d2a28294.js.map"
+    "main.34904864.js.map": "/Link-Sharing-App/static/js/main.34904864.js.map"
   },
   "entrypoints": [
     "static/css/main.0be07306.css",
-    "static/js/main.d2a28294.js"
+    "static/js/main.34904864.js"
   ]
 }
