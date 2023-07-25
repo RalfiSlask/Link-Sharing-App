@@ -1,4 +1,4 @@
-import { Hashrouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./Paths/Homepage/HomePage";
 import PreviewPage from "./Paths/PreviewPage/PreviewPage";
 import { FormProvider } from "./context/FormContext";
