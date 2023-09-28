@@ -11,14 +11,6 @@ export const FormProvider = ( {children }) => {
     const [lastNameValid, setLastNameValid] = useState(false);
     const [emailValid, setEmailValid] = useState(false);
 
-/*     useEffect(() => {
-        const storedFirstName = localStorage.getItem("firstname");
-        if(storedFirstName) {
-            setFirstName(storedFirstName)
-        }
-    }, []) */
-
-
     const checkInputValidity = (error, id) => {
         if(id === 1) {
             !error ? setFirstNameValid(true) : setFirstNameValid(false);

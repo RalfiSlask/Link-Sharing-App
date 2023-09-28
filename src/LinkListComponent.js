@@ -16,7 +16,7 @@ const LinkListComponent = ( {platform, input} ) => {
         setLogo(list.icon)
       }
     })
-  }, [platform])
+  }, [platform, listArray])
 
   useEffect(() => {
     listArray.forEach(container => {
@@ -24,7 +24,7 @@ const LinkListComponent = ( {platform, input} ) => {
         setColor(container.color)
       }
     })
-  }, [platform])
+  }, [platform, listArray])
 
   useEffect(() => {
     if(input !== "") {
@@ -34,12 +34,12 @@ const LinkListComponent = ( {platform, input} ) => {
         setUrl(container.link)
       })
     }
-  }, [platform, input])
+  }, [platform, input, listArray])
 
   const handleClick = () => {
     setShareUrl(url)
     window.open(url)
-  }
+  };
 
   return (
     <StyledLink onClick={handleClick} style={{background: `${color}`}}>

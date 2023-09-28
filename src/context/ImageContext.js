@@ -12,9 +12,8 @@ export const ImageProvider = ( {children} ) =>  {
         if(storedImage) {
             setUploadedImage(storedImage)
             setIsImageUploaded(true)
-            console.log(uploadedImage)
         };  
-    }, [])
+    }, [uploadedImage])
 
     const handleChange = (event) => {
         const file = event.target.files[0];
@@ -37,7 +36,7 @@ export const ImageProvider = ( {children} ) =>  {
                 } else {
                     setIsImageToBig(true)
                 }
-            }  
+            } 
             }
 
             reader.readAsDataURL(file)

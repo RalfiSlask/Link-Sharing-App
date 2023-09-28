@@ -7,7 +7,7 @@ const LinkInput = ( {id, platform, platformLogo} ) => {
     const [input, setInput] = useState("");
     const [error, setError] = useState(false);
     const [errorText, setErrorText] = useState("");
-    const { buttonPressed, setButtonPressed, linkRegex, updateList, listArray} = useContext(LinkContext);
+    const { buttonPressed, setButtonPressed, updateList, listArray } = useContext(LinkContext);
     const [placeholder, setPlaceholder] = useState("e.g. https://gitbhub.com/user")
     const [regExpression, setRegExpression] = useState("")
 
@@ -46,7 +46,7 @@ const LinkInput = ( {id, platform, platformLogo} ) => {
             }
             
         }
-    }, [buttonPressed, input])
+    }, [buttonPressed, input, id, platform, platformLogo, regExpression])
 
     return (
             <StyledLinkInput>

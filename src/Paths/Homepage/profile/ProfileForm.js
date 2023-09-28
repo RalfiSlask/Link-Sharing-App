@@ -5,18 +5,18 @@ import FormContext from "../../../context/FormContext";
 
 const ProfileForm = ( {info, buttonPressed, buttonReset} ) => {
     const [input, setInput] = useState("");
-    const {id, label, placeholder, type} = info;
     const [error, setError] = useState(false);
     const [errorText, setErrorText] = useState("");
+    const {id, label, placeholder, type} = info;
 
-    const {gatherFormInfo, checkInputValidity} = useContext(FormContext);
+    const { gatherFormInfo, checkInputValidity } = useContext(FormContext);
 
     useEffect(() => {
         if(buttonPressed) {
             checkInputValidity(error, id)
             gatherFormInfo(id, input)
         }
-    }, [buttonPressed, input, error])
+    }, [buttonPressed, input, error, checkInputValidity, id, gatherFormInfo])
 
     const handleChange = (event) => {
         setInput(event.target.value)
